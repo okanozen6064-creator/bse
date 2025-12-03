@@ -15,21 +15,26 @@ export default function Showcase() {
 
         {/* Image Grid - Premium layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
+          {showcaseImages.map((image, index) => (
             <div
-              key={item}
+              key={index}
               className="group relative aspect-square bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden hover:border-accent/50 transition-all duration-300"
             >
+              <img
+                src={image}
+                alt={`Showcase ${index + 1}`}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              />
+
               {/* Glossy overlay effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              {/* Placeholder with subtle pattern */}
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-card via-card/80 to-background">
-                <div className="text-center">
-                  <div className="inline-flex p-4 bg-accent/10 rounded-lg mb-4">
-                    <Sparkles className="text-accent" size={28} />
+              {/* Overlay with icon on hover */}
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="inline-flex p-3 bg-accent/20 rounded-full backdrop-blur-sm border border-accent/50">
+                    <Sparkles className="text-accent" size={24} />
                   </div>
-                  <p className="text-foreground/60 text-sm font-medium">Premium Detailing</p>
                 </div>
               </div>
             </div>

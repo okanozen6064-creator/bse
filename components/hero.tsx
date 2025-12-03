@@ -47,18 +47,16 @@ export default function Hero() {
 
         {/* Hero showcase area - abstract glossy surface */}
         <div className="mt-24 relative">
-          <div className="aspect-video bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden relative">
-            {/* Simulated glossy surface with reflections */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent"></div>
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-20 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-
-            {/* Placeholder for automotive imagery */}
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-foreground/50 text-sm">Premium automotive surfaces</p>
-              </div>
-            </div>
+          <div className="aspect-video bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden relative group">
+            <div className="absolute inset-0 bg-accent/5 mix-blend-overlay z-10"></div>
+            <img
+              src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1920&q=80"
+              alt="Premium Car Detailing"
+              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+            />
+            {/* Glossy overlay effect */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-30"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
           </div>
         </div>
       </div>
