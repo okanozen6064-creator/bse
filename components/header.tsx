@@ -10,10 +10,7 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center">
-            <div className="w-5 h-5 border-2 border-foreground"></div>
-          </div>
-          <span className="font-bold text-lg tracking-tight">BSE</span>
+          <img src="/logo.png" alt="BSE Motors Logo" className="h-12 w-auto object-contain" />
         </div>
 
         <nav className="hidden md:flex items-center gap-12">

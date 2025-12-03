@@ -2,6 +2,7 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Services from "@/components/services"
+import Process from "@/components/process"
 import WhyBSE from "@/components/why-bse"
 import Showcase from "@/components/showcase"
 import BeforeAfter from "@/components/before-after"
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <Services />
       <WhyBSE />
+      <Process />
       <Showcase />
       <BeforeAfter
         beforeImage="https://images.unsplash.com/photo-1600712242805-5f78671451ed?q=80&w=2574&auto=format&fit=crop"
