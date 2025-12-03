@@ -4,12 +4,12 @@ import type React from "react"
 
 export default function Showcase() {
   const showcaseImages = [
-    "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1552975084-6e027cd345c2?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1580273916550-e323be2ed5f6?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
+    "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80", // Polishing/Detailing process
+    "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80", // Luxury car interior/detail
+    "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80", // Water beading/PPF effect
+    "https://images.unsplash.com/photo-1605218427368-35b0f9940501?auto=format&fit=crop&w=800&q=80", // Ceramic coating application
+    "https://images.unsplash.com/photo-1552975084-6e027cd345c2?auto=format&fit=crop&w=800&q=80", // Clean luxury car
+    "https://images.unsplash.com/photo-1632823471565-1ecf9856d788?auto=format&fit=crop&w=800&q=80"  // Wheel detailing
   ]
 
   return (

@@ -12,7 +12,7 @@ export default function WhyBSE() {
             </h2>
 
             <p className="text-lg text-foreground/70 leading-relaxed">
-              BSE Garage, otomotiv endüstrisinde handcrafted excellence ve bespoke service'in sembolüdür.
+              BSE Garage, otomotiv endüstrisinde el işçiliği mükemmelliği ve kişiye özel hizmetin sembolüdür.
             </p>
 
             <div className="space-y-6">
@@ -23,7 +23,7 @@ export default function WhyBSE() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Premium Craftsmanship</h3>
+                  <h3 className="font-bold text-lg mb-2">Üstün İşçilik</h3>
                   <p className="text-foreground/70">Her detay, en yüksek kalite standartlarında uygulanır.</p>
                 </div>
               </div>
@@ -35,7 +35,7 @@ export default function WhyBSE() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Paint Protection Expertise</h3>
+                  <h3 className="font-bold text-lg mb-2">Boya Koruma Uzmanlığı</h3>
                   <p className="text-foreground/70">Boya koruma teknolojisinde yılların deneyimi ve uzmanlık.</p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default function WhyBSE() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Exclusive Service</h3>
+                  <h3 className="font-bold text-lg mb-2">Ayrıcalıklı Hizmet</h3>
                   <p className="text-foreground/70">Supercar sahipleri için özel ve eksklusif hizmet deneyimi.</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function WhyBSE() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Luxury Attention to Detail</h3>
+                  <h3 className="font-bold text-lg mb-2">Lüks Detay Hassasiyeti</h3>
                   <p className="text-foreground/70">Lüks otomotif dünyasının standartlarında hassas dikkat.</p>
                 </div>
               </div>
