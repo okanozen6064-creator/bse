@@ -46,17 +46,19 @@ export default function Hero() {
         </div>
 
         {/* Hero showcase area - abstract glossy surface */}
-        <div className="mt-24 relative">
-          <div className="aspect-video bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden relative group">
+        {/* Hero showcase area - blended image */}
+        <div className="mt-12 relative -mx-6 lg:-mx-0">
+          <div className="aspect-video relative group">
             <div className="absolute inset-0 bg-accent/5 mix-blend-overlay z-10"></div>
             <img
               src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1920&q=80"
               alt="Premium Car Detailing"
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 mask-image-gradient"
             />
-            {/* Glossy overlay effect */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-30"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+            {/* Gradient overlays for blending */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
           </div>
         </div>
       </div>
