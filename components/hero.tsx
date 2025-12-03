@@ -35,14 +35,14 @@ export default function Hero() {
 
           {/* Main Headline */}
           <FadeIn delay={0.4}>
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] text-white">
               {t("hero.title")}
             </h1>
           </FadeIn>
 
           {/* Subheading */}
           <FadeIn delay={0.6}>
-            <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed">
               {t("hero.subtitle")}
             </p>
           </FadeIn>
