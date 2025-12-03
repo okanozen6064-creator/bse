@@ -140,4 +140,14 @@
   p {
     @apply leading-relaxed text-foreground/90;
   }
+
+  /* Force Instagram embeds to blend with dark theme */
+  iframe.instagram-media {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    margin: 0 !important;
+  }
 }
