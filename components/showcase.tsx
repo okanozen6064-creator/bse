@@ -3,6 +3,15 @@
 import type React from "react"
 
 export default function Showcase() {
+  const showcaseImages = [
+    "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1552975084-6e027cd345c2?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1580273916550-e323be2ed5f6?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80"
+  ]
+
   return (
     <section className="py-24 px-6 bg-background border-t border-border">
       <div className="max-w-7xl mx-auto">
