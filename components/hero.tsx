@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import FadeIn from "./fade-in"
 
 export default function Hero() {
   return (
@@ -20,33 +21,41 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full pt-20">
         <div className="max-w-3xl space-y-8">
           {/* Overline */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full">
-            <div className="w-2 h-2 bg-accent rounded-full"></div>
-            <span className="text-xs font-semibold tracking-wider text-white/90 uppercase">
-              Premium Automotive Care
-            </span>
-          </div>
+          <FadeIn delay={0.2} direction="down">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full">
+              <div className="w-2 h-2 bg-accent rounded-full"></div>
+              <span className="text-xs font-semibold tracking-wider text-white/90 uppercase">
+                Premium Automotive Care
+              </span>
+            </div>
+          </FadeIn>
 
           {/* Main Headline */}
-          <h1 className="text-6xl lg:text-8xl font-bold tracking-tighter leading-none text-white">
-            BSE GARAGE
-          </h1>
+          <FadeIn delay={0.4}>
+            <h1 className="text-6xl lg:text-8xl font-bold tracking-tighter leading-none text-white">
+              BSE GARAGE
+            </h1>
+          </FadeIn>
 
           {/* Subheading */}
-          <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed">
-            Lüks araçlar için özel koruma, kaplama ve parlatma çözümleri. Handcrafted precision detailing.
-          </p>
+          <FadeIn delay={0.6}>
+            <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed">
+              Lüks araçlar için özel koruma, kaplama ve parlatma çözümleri. Handcrafted precision detailing.
+            </p>
+          </FadeIn>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="group px-8 py-4 bg-accent text-accent-foreground rounded-sm font-semibold text-lg hover:bg-accent/90 transition-all flex items-center gap-3">
-              Hizmetleri İncele
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-sm font-semibold text-lg hover:bg-white/20 transition-colors">
-              Hemen İletişime Geç
-            </button>
-          </div>
+          <FadeIn delay={0.8}>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <button className="group px-8 py-4 bg-accent text-accent-foreground rounded-sm font-semibold text-lg hover:bg-accent/90 transition-all flex items-center gap-3">
+                Hizmetleri İncele
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+              <button className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-sm font-semibold text-lg hover:bg-white/20 transition-colors">
+                Hemen İletişime Geç
+              </button>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import FadeIn from "./fade-in"
 
 export default function Showcase() {
   const showcaseImages = [
@@ -15,38 +16,43 @@ export default function Showcase() {
   return (
     <section className="py-24 px-6 bg-background border-t border-border">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
-          <h2 className="text-5xl lg:text-6xl font-bold tracking-tight">Showcase</h2>
-          <p className="text-lg text-foreground/70 mt-4">
-            Lüks araç kaplaması ve detailing işlemlerimizin başyapıtları
-          </p>
+        <div className="mb-16 text-center">
+          <FadeIn>
+            <h2 className="text-5xl lg:text-6xl font-bold tracking-tight">Showcase</h2>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="text-lg text-foreground/70 mt-4">
+              Lüks araç kaplaması ve detailing işlemlerimizin başyapıtları
+            </p>
+          </FadeIn>
         </div>
 
         {/* Image Grid - Premium layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {showcaseImages.map((image, index) => (
-            <div
-              key={index}
-              className="group relative aspect-square bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden hover:border-accent/50 transition-all duration-300"
-            >
-              <img
-                src={image}
-                alt={`Showcase ${index + 1}`}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-              />
+            <FadeIn key={index} delay={0.1 * index} direction="up">
+              <div
+                className="group relative aspect-square bg-gradient-to-br from-card to-background border border-border rounded-lg overflow-hidden hover:border-accent/50 transition-all duration-300"
+              >
+                <img
+                  src={image}
+                  alt={`Showcase ${index + 1}`}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                />
 
-              {/* Glossy overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Glossy overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              {/* Overlay with icon on hover */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="inline-flex p-3 bg-accent/20 rounded-full backdrop-blur-sm border border-accent/50">
-                    <Sparkles className="text-accent" size={24} />
+                {/* Overlay with icon on hover */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="inline-flex p-3 bg-accent/20 rounded-full backdrop-blur-sm border border-accent/50">
+                      <Sparkles className="text-accent" width={24} height={24} />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>
