@@ -9,7 +9,9 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage()
 
   const toggleLanguage = () => {
-    setLanguage(language === "tr" ? "en" : "tr")
+    if (language === "tr") setLanguage("en")
+    else if (language === "en") setLanguage("ru")
+    else setLanguage("tr")
   }
 
   return (
@@ -66,7 +68,7 @@ export default function Header() {
               className="flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground"
             >
               <Globe size={18} />
-              <span className="uppercase">{language === "tr" ? "English" : "Türkçe"}</span>
+              <span className="uppercase">{language === "tr" ? "English" : language === "en" ? "Русский" : "Türkçe"}</span>
             </button>
             <button className="w-full px-4 py-2 bg-accent text-accent-foreground rounded-sm text-sm font-semibold mt-4">
               {t("nav.appointment")}

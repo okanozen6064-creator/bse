@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react"
 
-type Language = "tr" | "en"
+type Language = "tr" | "en" | "ru"
 
 interface LanguageContextType {
     language: Language
@@ -34,6 +34,18 @@ const translations = {
         "nav.about": "About",
         "nav.contact": "Contact",
         "nav.appointment": "Appointment",
+    },
+    ru: {
+        "hero.title": "Безупречная защита и эстетика для вашего автомобиля",
+        "hero.subtitle": "Сохраните ценность вашего автомобиля с BSE Garage. Профессиональная защита пленкой PPF, керамическое покрытие и детальный уход.",
+        "hero.cta.appointment": "Записаться",
+        "hero.cta.services": "Наши услуги",
+        "hero.badge.tow": "Эвакуатор",
+        "hero.badge.valet": "Услуга парковщика",
+        "nav.services": "Услуги",
+        "nav.about": "О нас",
+        "nav.contact": "Контакты",
+        "nav.appointment": "Запись",
     }
 }
 
