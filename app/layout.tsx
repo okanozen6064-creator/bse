@@ -1,22 +1,23 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
+import { Outfit, Cinzel } from "next/font/google"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: '--font-outfit',
+  display: 'swap',
+})
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: '--font-cinzel',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "BSE GARAGE – Premium Araç Detailing & Kaplama",
-  description:
-    "Lüks araçlar için özel koruma, kaplama ve parlatma çözümleri. Premium detailing ve ceramic coating hizmetleri.",
-  keywords: "araç detailing, ceramic coating, PPF, kaplama, car protection, luxury automotive",
-  openGraph: {
-    title: "BSE GARAGE – Premium Araç Detailing & Kaplama",
-    description: "Lüks araçlar için özel koruma, kaplama ve parlatma çözümleri.",
-  },
-    generator: 'v0.app'
+  title: "RossCar Premium | Araç Kaplama & Koruma",
+  description: "RossCar Premium: Şeffaf (PPF) & Renkli Kaplama, Cam Filmi. EossProtection, Kamikaze, Gyeon Yetkili Merkezi.",
 }
 
 export default function RootLayout({
@@ -25,10 +26,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr" className="dark">
-      <body className={`font-sans antialiased bg-background`}>
+    <html lang="tr" className="dark scroll-smooth">
+      <body className={`${outfit.variable} ${cinzel.variable} font-sans bg-black text-white antialiased overflow-x-hidden`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )
